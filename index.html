@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Darren Lai</title>
+    <!-- load Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="leftColumn">
+    <img src="Lai_Darren_Portfolio_images/sally_workshop.jpg" alt="Sally workshop">
+    <img src="Lai_Darren_Portfolio_images/sally_desk.jpg" alt="Sally desk">
+    <img src="Lai_Darren_Portfolio_images/sally_eating.gif" alt="Sally eating gif">
+    <img src="Lai_Darren_Portfolio_images/sally_chilling.gif" alt="Sally chilling">
+    <img src="Lai_Darren_Portfolio_images/sally_cheerup.gif" alt="Sally cheer up">
+    <img src="Lai_Darren_Portfolio_images/sally_fan.gif" alt="Sally fan">
+    <img src="Lai_Darren_Portfolio_images/sally_shavedice.jpg" alt="Sally shaved ice">
+    <img src="Lai_Darren_Portfolio_images/sally_copier.jpg" alt="Sally copy machine">
+    <img src="Lai_Darren_Portfolio_images/sally_snooze.jpg" alt="Sally snoozing">
+    <img src="Lai_Darren_Portfolio_images/sally_class.jpg" alt="Sally in class">
+    <img src="Lai_Darren_Portfolio_images/sally_hotcocoa.jpg" alt="">
+  </div>
+  <div class="rightColumn">
+    <img src="Lai_Darren_Portfolio_images/choonsik_carpet.gif" alt="Choonsik magic carpet">
+    <img src="Lai_Darren_Portfolio_images/choonsik_dozing.jpg" alt="Ryan and Choonsik photo">
+    <img src="Lai_Darren_Portfolio_images/choonsik_computer.gif" alt="Choonsik computer">
+    <img src="Lai_Darren_Portfolio_images/ryanchoonsik_tennis.jpg" alt="Ryan and Choonsik tennis">
+    <img src="Lai_Darren_Portfolio_images/ryanchoonsik_photo.jpg" alt="Ryan and Choonsik photo">
+    <img src="Lai_Darren_Portfolio_images/choonsik_popcorn.gif" alt="Choonsik eating popcorn">
+    <img src="Lai_Darren_Portfolio_images/choonsik_garden.gif" alt="Ryan harvesting Choonsik">
+    <img src="Lai_Darren_Portfolio_images/choonsik_basketball.gif" alt="Choonsik as basketball">
+    <img src="Lai_Darren_Portfolio_images/choonsik_snow.jpg" alt="nurse Choonsik in the snow">
+    <img src="Lai_Darren_Portfolio_images/choonsik_tanning.gif" alt="Choonsik tanning">
+    <img src="Lai_Darren_Portfolio_images/choonsik_giftwrap.gif" alt="Choonsik giftwrapped">
+  </div>
+<!-- nagivation hamburger icon-->
+  <button onclick=openNav() class="navButton">
+    <img src="Lai_Darren_Portfolio_images/hamburgermenu_icon.gif" alt="hamburger menu icon">
+  </button>
+<!-- navigation bar -->
+  <nav class="navScreen">
+    <a href="#aboutMe">About Me</a>
+    <h4>|</h4>
+    <a href="#education">Education</a>
+    <h4>|</h4>
+    <a href="#techSkills">Technology/Skills</a>
+    <h4>|</h4>
+    <a href="#projects">Projects</a>
+    <h4>|</h4>
+    <a href="#socialMedia">Social Media/Contact</a>
+  </nav>
+<!-- small screen navigation bar -->
+  <nav class=navMobile>
+    <div class="navMobileRow">
+      <a onclick=closeNav() href="#aboutMe">About Me</a>
+    <h4>|</h4>
+    <a onclick=closeNav() href="#education">Education</a>
+    <h4>|</h4>
+    <a onclick=closeNav() href="#techSkills">Technology/Skills</a>
+    </div>
+    <div class="navMobileRow">
+      <a onclick=closeNav() href="#projects">Projects</a>
+    <h4>|</h4>
+    <a onclick=closeNav() href="#socialMedia">Social Media/Contact</a>
+    </div>
+  </nav>
+
+  <h1>Darren Lai</h1>
+  <img class="profilePic" src="Lai_Darren_Portfolio_images/profilepic_main.jpg" alt="profile pic">
+  <div id="aboutMe">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Darren. I love to analyze things. Some of my interests include: exploring regional foods, classical music, K-pop girl groups, life philosophy, Sally and Choonsik (the characters to the left and right of the page). I often think about how to optimize and improve things, how not to limit myself, how to improve on my skills/talents and how to shore up my weaknesses. Life is always moving on, so we should too and improve with age.
+    </p>
+    <img class="pi" onclick=showFunFact() src="Lai_Darren_Portfolio_images/blinkingpi.gif" alt="pi">
+    <p class="clickMe">
+      Click me!
+    </p>
+    <p class="funFact">
+      <span>Fun fact:</span> I can recite <strong>340</strong> digits of pi!
+      <br>
+      I also love pie. My favorite pies are pecan and french apple.
+    </p>
+    <h2>Why I decided to pursue Software Engineering</h2>
+    <p>
+      Growing up, I was always skilled at deductive reasoning. With that said, I was naturally skilled in mathematics, and I eventually pursued a Mathematics degree in college. However, when my graduation drew nearer and nearer, I looked at the path I was pursuing: higher academia, which included getting a doctorate degree. I struggled to find a topic that particularly interested me which I could focus on for such studies. At the time, I could have pursued computer science because it is a clear extension of logic, but I had the perception that it was extremely repetitive. I preferred more theoretical and mental challenges at the time.
+    </p>
+    <p>
+      On another note, I felt I had personal issues that I wanted to overcome, namely improving my social skills. It was a struggle for me to ask for letters of recommendation to apply to summer research programs. I wasn't able to engage in conversation and ask questions, especially with strangers. That led me to pursue a path in self-employment and sales that eventually helped me to improve my competency in social skills.
+    </p>
+    <p>
+      Flash forward to now. I have heard over the years about friends or acquaintances that enrolled in a programming bootcamp and ended up working as a programmer in some way. It helped that the income was attractive, especially compared to what I was making being self-employed and having the challenge of managing just about all the aspects of self-employment. I tend to take the difficult path, which I did in an area where my skills were less useful. But now I feel it is the right time to work with my strength in logical reasoning, as well as incorporate the skills I've picked up while being self-employed. I learn better when I have some kind of guidance, and Coding Dojo's platform seemed to be quite professional, so I decided to take a chance to enroll in their software development course. 
+    </p>
+    <h2>What makes me the right candidate?</h2>
+    <p>
+      I can see things from multiple perspectives, as I am very analytical and constantly thinking about the many dimensions of an issue. I see things both on a big picture level as well as the micro-details. Generally, I am pragmatic, so I will find an appropriate solution given the conditions, but at the same time have ideas for improvement if the scope is smaller.  
+    </p>
+  </div>
+
+  <div id="education">
+    <h2>Education</h2>
+    <p>
+      Coding Dojo
+      <br>
+      Software Development Full-Time
+      <br>
+      Sep 2023
+    </p>
+    <p>
+      California State Polytechnic University, Pomona
+      <br>
+      Bachelor of Science, Mathematics (pure option), cum laude
+      <br>
+      Mar 2014
+    </p>
+
+  </div>
+  <div id="techSkills">
+    <h2>Technology/Skills</h2>
+    <p>Javascript, HTML/CSS, R</p>
+  </div>
+  <div id="projects">
+    <h2>Projects</h2>
+    <div class="projectbox"></div>
+    <div class="projectbox"></div>
+  </div>
+
+  <!-- social media/ contact section -->
+  <h3 class="socMed">Social Media / Contact</h3>
+  <div id="socialMedia">
+    <div onclick=email() class="socMedBox">
+        <img src="Lai_Darren_Portfolio_images/email_icon.png" alt="email icon">
+      <p>email</p>
+    </div>
+    <div onclick=linkedin() class="socMedBox">
+      <img  src="Lai_Darren_Portfolio_images/linkedin_icon.png" alt="LinkedIn icon">
+      <p>LinkedIn</p>
+    </div>
+    <div onclick=github() class="socMedBox">
+      <img  src="Lai_Darren_Portfolio_images/github_icon.png" alt="GitHub icon">
+      <p>GitHub</p>
+    </div>
+    <div onclick=instagram() class="socMedBox">
+      <img  src="Lai_Darren_Portfolio_images/instagram_icon.webp" alt="Instagram icon">
+      <p>Instagram</p>
+    </div>
+    <div onclick=youtube() class="socMedBox">
+      <img  src="Lai_Darren_Portfolio_images/youtube_icon.png" alt="YouTube icon">
+      <p>YouTube</p>
+    </div>
+    <div onclick=yelp() class="socMedBox">
+      <img  src="Lai_Darren_Portfolio_images/yelp_icon.png" alt="Yelp icon">
+      <p>Yelp</p>
+    </div>
+  </div>
+  <footer>
+    Copyright 2023 Darren Lai
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

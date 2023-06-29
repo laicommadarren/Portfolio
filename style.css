@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* images on side */
+.leftColumn {
+  position: fixed;
+  max-width: 20%;
+}
+
+.rightColumn {
+  position: fixed;
+  right: 0;
+  width: 20%;
+}
+
+.leftColumn > img, .rightColumn > img {
+  width: 100%;
+  height: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+/* for computer screens */
+@media (min-width: 841px) {
+  .navButton {
+    visibility: hidden;
+  }
+  
+  .navScreen {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    font-size: 14;
+    position: fixed;
+    left: 20%;
+    top: 0%;
+    background-color: #FDC147;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
+  }
+
+  .navMobile {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .profilePic {
+    display: flex;
+    max-width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10%;
+  }
+
+  #aboutMe, #education, #techSkills, #projects {
+    margin: auto;
+    margin-top: 30px;
+    width: 58%;
+    text-align: center;
+    border: solid black;
+    padding: 20px;
+    background-color: #FCD68B;
+  }
+
+  #aboutMe {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .socMed {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  #socialMedia {
+    display: flex;
+    width: 60%;
+    margin: 0px auto;
+    justify-content: space-around;
+    margin-top: 0px;
+    padding: 10px;
+    margin-bottom: 100px;
+  }
+  
+  .socMedBox {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .socMedBox > img {
+    width: 5vw;
+    height: 5vw;
+  }
+  
+  .socMedBox > a > img {
+    width: 5vw;
+    height: 5vw;
+  }
+  
+  .socMedBox > img:hover, .socMedBox > a > img:hover {
+    width: 6vw;
+    height: 6vw;
+  }
+  
+  .socMedBox > p {
+    text-align: center;
+  }
+}
+/* for small screens */ 
+@media (max-width:840px) {
+  .navButton {
+    position: fixed;
+    left: 20%;
+  }
+  
+  .navScreen {
+    display: none;
+  }
+
+  .navMobile {
+    visibility: hidden;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
+  }
+
+  .navMobileRow {
+    display: hidden;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    font-size: 10;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FDC147;
+    padding-top: 0px;
+    align-items: center;
+    border-bottom: solid black;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .profilePic {
+    display: flex;
+    max-width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10%;
+  }
+
+  #aboutMe, #education, #techSkills, #projects {
+    margin: auto;
+    margin-top: 20px;
+    width: 58%;
+    text-align: center;
+    border: solid black;
+    padding: 10px;
+    background-color: #FCD68B;
+  }
+  #aboutMe {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .socMed {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #socialMedia {
+    width: 100px;
+    margin: 0px auto;
+    margin-top: 0px;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .socMedBox {
+    display: flex;
+    justify-content: flex-start;
+
+  }
+  
+  .socMedBox > img {
+    width: 5vw;
+    height: 5vw;
+  }
+  
+  .socMedBox > a > img {
+    width: 5vw;
+    height: 5vw;
+  }
+  
+  .socMedBox > p {
+    padding-left: 20px;
+  }
+}
+
+.pi {
+  width: 5%;
+  min-width: 50px;
+}
+
+.clickMe {
+  font-size: 80%;
+}
+
+.funFact {
+  visibility: hidden;
+}
+
+.funFact > span {
+  color: red;
+}
+
+.projectbox {
+  border: solid black;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
