@@ -2,13 +2,18 @@ var navButton = document.querySelector(".navButton");
 var navMobile = document.querySelector(".navMobile");
 
 function openNav() {
+  setTimeout(function() {
   navButton.style.visibility = "hidden";
   navMobile.style.visibility = "visible";
+}, 500);
+  setTimeout(closeNav, 5000);
 }
 
 function closeNav() {
-  navMobile.style.visibility = "hidden";
-  navButton.style.visibility = "visible";
+  setTimeout(function() {  
+    navMobile.style.visibility = "hidden";
+    navButton.style.visibility = "visible";
+  }, 500);
 }
 
 function showFunFact() {

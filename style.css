@@ -45,6 +45,11 @@ a:link {
     border-bottom: solid black;
   }
 
+.navScreen > a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
   .navMobile {
     display: none;
   }
@@ -104,6 +109,8 @@ a:link {
   .socMedBox > img {
     width: 5vw;
     height: 5vw;
+    margin: 10px;
+    border-radius: 20%;
   }
   
   .socMedBox > a > img {
@@ -112,27 +119,32 @@ a:link {
   }
   
   .socMedBox > img:hover, .socMedBox > a > img:hover {
-    width: 6vw;
-    height: 6vw;
+    transform: scale(1.2);
   }
   
   .socMedBox > p {
     text-align: center;
+    font-weight: bold;
   }
 }
-/* for small screens */ 
+/* for smaller screens */ 
 @media (max-width:840px) {
   .navButton {
     position: fixed;
     left: 20%;
   }
   
+  .navButton:hover {
+    scale: 120%;
+  }
+
   .navScreen {
     display: none;
   }
 
   .navMobile {
-    visibility: hidden;
+    visibility: "hidden";
+    transition: 500ms;
     position: fixed;
     top: 0%;
     width: 100%;
@@ -141,6 +153,11 @@ a:link {
     border-right: solid black;
     border-bottom: solid black;
   }
+
+.navMobileRow > a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
   .navMobileRow {
     display: hidden;
@@ -202,12 +219,16 @@ a:link {
   .socMedBox {
     display: flex;
     justify-content: flex-start;
-
   }
   
   .socMedBox > img {
     width: 5vw;
     height: 5vw;
+    border-radius: 20%;
+  }
+
+  .socMedBox > img:hover, .socMedBox > a > img:hover {
+    transform: scale(1.2);
   }
   
   .socMedBox > a > img {
@@ -217,6 +238,7 @@ a:link {
   
   .socMedBox > p {
     padding-left: 20px;
+    font-weight: bold;
   }
 }
 
