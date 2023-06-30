@@ -1,19 +1,24 @@
 var navButton = document.querySelector(".navButton");
 var navMobile = document.querySelector(".navMobile");
 
+navMobile.style.visibility = "hidden";
+navButton.style.visibility = "visible";
+
 function openNav() {
-  setTimeout(function() {
   navButton.style.visibility = "hidden";
   navMobile.style.visibility = "visible";
-}, 500);
-  setTimeout(closeNav, 5000);
 }
 
+let isNavButtonClickInside = window.addEventListener("click", function(e) {
+  if (!navMobile.contains(e.target) && !navButton.contains(e.target)) {
+  navMobile.style.visibility = "hidden";
+  navButton.style.visibility = "visible";
+  }
+})
+
 function closeNav() {
-  setTimeout(function() {  
-    navMobile.style.visibility = "hidden";
-    navButton.style.visibility = "visible";
-  }, 500);
+  navMobile.style.visibility = "hidden";
+  navButton.style.visibility = "visible";
 }
 
 function showFunFact() {

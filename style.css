@@ -1,12 +1,13 @@
+/* css reset */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-/* images on side */
+/* images on sides */
 .leftColumn {
   position: fixed;
-  max-width: 20%;
+  width: 20%;
 }
 
 .rightColumn {
@@ -20,15 +21,13 @@
   height: auto;
 }
 
-a:link {
-  text-decoration: none;
-}
-/* for computer screens */
+/* for computer/larger screens */
 @media (min-width: 841px) {
+  /* navigation */
   .navButton {
-    visibility: hidden;
+    display: none;
   }
-  
+
   .navScreen {
     display: flex;
     list-style-type: none;
@@ -45,53 +44,39 @@ a:link {
     border-bottom: solid black;
   }
 
-.navScreen > a:hover {
-  text-decoration: underline;
-  font-weight: bold;
-}
+  .navScreen > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
   .navMobile {
     display: none;
   }
-
-  h1 {
-    text-align: center;
-    padding-top: 100px;
-  }
   
-  .profilePic {
-    display: flex;
-    max-width: 25%;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10%;
+  /* profile section large screen */
+  #myName {
+    text-align: center;
+    padding-top: 75px;
   }
 
   #aboutMe, #education, #techSkills, #projects {
-    margin: auto;
-    margin-top: 30px;
-    width: 58%;
-    text-align: center;
-    border: solid black;
     padding: 20px;
-    background-color: #FCD68B;
   }
 
   #aboutMe {
     padding-left: 10%;
     padding-right: 10%;
   }
-
-  .socMed {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    margin-top: 40px;
-  }
   
+  /* social media section large screen */
   #socialMedia {
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: 0px auto;
     justify-content: space-around;
     margin-top: 0px;
@@ -118,10 +103,6 @@ a:link {
     height: 5vw;
   }
   
-  .socMedBox > img:hover, .socMedBox > a > img:hover {
-    transform: scale(1.2);
-  }
-  
   .socMedBox > p {
     text-align: center;
     font-weight: bold;
@@ -129,11 +110,23 @@ a:link {
 }
 /* for smaller screens */ 
 @media (max-width:840px) {
+  /* navigation */
   .navButton {
     position: fixed;
     left: 20%;
+    background-color: #FDC147;
+    border-radius: 15%;
+    border-color: #FCD68B;
+  }
+
+  .navButton > img {
+    height: 75px;
   }
   
+  .navButton > p {
+    font-size: 12px;
+  }
+
   .navButton:hover {
     scale: 120%;
   }
@@ -144,23 +137,21 @@ a:link {
 
   .navMobile {
     visibility: "hidden";
-    transition: 500ms;
     position: fixed;
     top: 0%;
     width: 100%;
     background-color: white;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
-.navMobileRow > a:hover {
-  font-weight: bold;
-  text-decoration: underline;
-}
+  .navMobileRow > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 
   .navMobileRow {
-    display: hidden;
     display: flex;
     list-style-type: none;
     width: 100%;
@@ -172,48 +163,34 @@ a:link {
     align-items: center;
     border-bottom: solid black;
   }
-
-  h1 {
+  a {
+    color: black;
+  }
+  /* profile section small screen */
+  #myName {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 85px;
   }
   
-  .profilePic {
-    display: flex;
-    max-width: 25%;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10%;
-  }
-
   #aboutMe, #education, #techSkills, #projects {
-    margin: auto;
-    margin-top: 20px;
-    width: 58%;
-    text-align: center;
-    border: solid black;
     padding: 10px;
-    background-color: #FCD68B;
   }
   #aboutMe {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  /* social media small screen */
   .socMed {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    margin-top: 40px;
     margin-bottom: 10px;
   }
   
   #socialMedia {
-    width: 100px;
+    width: 130px;
     margin: 0px auto;
     margin-top: 0px;
     padding: 10px;
     margin-bottom: 20px;
-    align-items: center;
   }
   
   .socMedBox {
@@ -226,10 +203,6 @@ a:link {
     height: 5vw;
     border-radius: 20%;
   }
-
-  .socMedBox > img:hover, .socMedBox > a > img:hover {
-    transform: scale(1.2);
-  }
   
   .socMedBox > a > img {
     width: 5vw;
@@ -241,6 +214,28 @@ a:link {
     font-weight: bold;
   }
 }
+/* end of screen adjustment css */
+
+/* about me section */
+
+.profilePic {
+  display: flex;
+  max-width: 25%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10%;
+}
+
+#aboutMe, #education, #techSkills, #projects {
+  margin: auto;
+  margin-top: 20px;
+  width: 58%;
+  text-align: center;
+  border: none;
+  background-color: #FCD68B;
+  border: 2px solid black;
+  border-radius: 15px;
+}
 
 .pi {
   width: 5%;
@@ -251,6 +246,10 @@ a:link {
   font-size: 80%;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
 .funFact {
   visibility: hidden;
 }
@@ -259,12 +258,26 @@ a:link {
   color: red;
 }
 
+/* project section*/
 .projectbox {
   border: solid black;
   padding: 10px;
   margin-top: 20px;
 }
 
+/* social media section (applies to all screen sizes */
+.socMed {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.socMedBox > img:hover, .socMedBox > a > img:hover {
+  transform: scale(1.2);
+}
+
+/* footer */
 footer {
   text-align: center;
   padding: 20px;

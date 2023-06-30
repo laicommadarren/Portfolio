@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <!-- images on left and right side -->
   <div class="leftColumn">
     <img src="Lai_Darren_Portfolio_images/sally_workshop.jpg" alt="Sally workshop">
     <img src="Lai_Darren_Portfolio_images/sally_desk.jpg" alt="Sally desk">
@@ -37,13 +38,10 @@
     <img src="Lai_Darren_Portfolio_images/choonsik_tanning.gif" alt="Choonsik tanning">
     <img src="Lai_Darren_Portfolio_images/choonsik_giftwrap.gif" alt="Choonsik giftwrapped">
   </div>
-<!-- nagivation hamburger icon-->
-  <button onmouseover=openNav() onclick=openNav() class="navButton">
-    <img src="Lai_Darren_Portfolio_images/hamburgermenu_icon.gif" alt="hamburger menu icon">
-  </button>
-<!-- navigation bar -->
+
+<!-- desktop/large screen navigation bar -->
   <nav class="navScreen">
-    <a href="#aboutMe">About Me</a>
+    <a href="#myName">About Me</a>
     <h4>|</h4>
     <a href="#education">Education</a>
     <h4>|</h4>
@@ -53,25 +51,28 @@
     <h4>|</h4>
     <a href="#socialMedia">Social Media/Contact</a>
   </nav>
-<!-- small screen navigation bar -->
-  <nav onmouseleave=closeNav() class=navMobile>
+<!-- small screen navigation -->
+<button onclick=openNav() class="navButton">
+  <img src="Lai_Darren_Portfolio_images/hamburgermenu_icon.png" alt="hamburger menu icon">
+</button>
+  <nav onclick = closeNav() class=navMobile>
     <div class="navMobileRow">
-      <a onclick=closeNav() href="#aboutMe">About Me</a>
-    <h4>|</h4>
-    <a onclick=closeNav() href="#education">Education</a>
-    <h4>|</h4>
-    <a onclick=closeNav() href="#techSkills">Technology/Skills</a>
+      <a onclick=closeNav() href="#myName">About Me</a>
+      <h4>|</h4>
+      <a onclick=closeNav() href="#education">Education</a>
+      <h4>|</h4>
+      <a onclick=closeNav() href="#techSkills">Technology/Skills</a>
     </div>
     <div class="navMobileRow">
       <a onclick=closeNav() href="#projects">Projects</a>
-    <h4>|</h4>
-    <a onclick=closeNav() href="#socialMedia">Social Media/Contact</a>
+      <h4>|</h4>
+      <a onclick=closeNav() href="#socialMedia">Social Media/Contact</a>
     </div>
   </nav>
-<!-- Name/ Profile Picture-->
-  <h1>Darren Lai</h1>
-  <img class="profilePic" src="Lai_Darren_Portfolio_images/profilepic_main.jpg" alt="profile pic">
-<!-- About Me section--> 
+<!-- Name and Profile Picture -->
+  <h1 id="myName">Darren Lai</h1>
+  <img class="profilePic" src="Lai_Darren_Portfolio_images/profilepic_main.jpg" alt="Darren profile pic">
+<!-- About Me section --> 
   <div id="aboutMe">
     <h2>About Me</h2>
     <p>
@@ -88,41 +89,42 @@
     </p>
     <h2>Why I decided to pursue Software Engineering</h2>
     <p>
-      Growing up, I was always skilled at deductive reasoning. With that said, I was naturally skilled in mathematics, and I eventually pursued a Mathematics degree in college. However, when my graduation drew nearer and nearer, I looked at the path I was pursuing: higher academia, which included getting a doctorate degree. I struggled to find a topic that particularly interested me which I could focus on for such studies. At the time, I could have pursued computer science because it is a clear extension of logic, but I had the perception that it was extremely repetitive. I preferred more theoretical and mental challenges at the time.
+      Growing up, I was always skilled at deductive reasoning. With that said, I excelled in mathematics, and I eventually pursued a Mathematics degree in college. However, when my graduation drew nearer and nearer, I looked at the path I was pursuing: higher academia, which included getting a doctorate degree. I struggled to find a topic that particularly interested me which I could focus on for such studies. At the time, I could have pursued computer science because it is a clear extension of logic, but I had the perception that it was extremely repetitive. I preferred more theoretical and mental challenges at the time.
     </p>
     <p>
       On another note, I felt I had personal issues that I wanted to overcome, namely improving my social skills. It was a struggle for me to ask for letters of recommendation to apply to summer research programs. I wasn't able to engage in conversation and ask questions, especially with strangers. That led me to pursue a path in self-employment and sales that eventually helped me to improve my competency in social skills.
     </p>
     <p>
-      Flash forward to now. I have heard over the years about friends or acquaintances that enrolled in a programming bootcamp and ended up working as a programmer in some way. It helped that the income was attractive, especially compared to what I was making being self-employed and having the challenge of managing just about all the aspects of self-employment. I tend to take the difficult path, which I did in an area where my skills were less useful. But now I feel it is the right time to work with my strength in logical reasoning, as well as incorporate the skills I've picked up while being self-employed. I learn better when I have some kind of guidance, and Coding Dojo's platform seemed to be quite professional, so I decided to take a chance to enroll in their software development course. 
+      Flash forward to now. I have heard over the years about friends or acquaintances that enrolled in a programming bootcamp and ended up working as a programmer in some way. It helped that the income was attractive, especially compared to what I was making being self-employed and having the challenge of managing just about all the aspects of self-employment. I have tended to take more difficult paths to challenge myself, mostly in areas where my skills were less useful. Now I feel it is the right time to work with my strength in logical reasoning to be able to create a sustaining career, as well as incorporate the skills I've picked up while being self-employed. I learn better when I have some kind of guidance, and Coding Dojo's platform seemed to be quite professional, so I decided to take a chance to enroll in their software development course. 
     </p>
     <h2>What makes me the right candidate?</h2>
     <p>
-      I can see things from multiple perspectives, as I am very analytical and constantly thinking about the many dimensions of an issue. I see things both on a big picture level as well as the micro-details. Generally, I am pragmatic, so I will find an appropriate solution given the conditions, but at the same time have ideas for improvement if the scope is smaller.  
+      I can see things from multiple perspectives, as I am very analytical and constantly thinking about the many dimensions of an issue. I see things both on a big picture level as well as the micro-details. Generally, I am pragmatic, so I will find an appropriate solution given the conditions, but at the same time have ideas for improvement for potential future development.
     </p>
   </div>
-<!-- Education section-->
+<!-- Education section -->
   <div id="education">
     <h2>Education</h2>
     <p>
-      Coding Dojo
+      <b>Coding Dojo</b>
       <br>
-      Software Development Full-Time
+      <i>Software Development Full-Time</i>
       <br>
       Sep 2023
     </p>
     <p>
-      California State Polytechnic University, Pomona
+      <b>California State Polytechnic University, Pomona</b>
       <br>
-      Bachelor of Science, Mathematics (pure option), cum laude
+      <i>Bachelor of Science, Mathematics (pure option), cum laude</i>
       <br>
       Mar 2014
     </p>
 
   </div>
+  <!-- technology/skills -->
   <div id="techSkills">
     <h2>Technology/Skills</h2>
-    <p>Javascript, HTML/CSS, R</p>
+    <p><b>Javascript, HTML/CSS, R</b></p>
   </div>
   <div id="projects">
     <h2>Projects</h2>
@@ -158,6 +160,7 @@
       <p>Yelp</p>
     </div>
   </div>
+  <!-- footer -->
   <footer>
     Copyright 2023 Darren Lai
   </footer>
