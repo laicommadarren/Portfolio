@@ -6,6 +6,7 @@ This is my Porfolio project for Coding Dojo Web Fundamentals Stack. I implemente
 
 - [Overview](#overview)
 - [Features](#features)
+- [Preview](#preview)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -30,6 +31,10 @@ Educational Background
 Technology and Skills learned
 Featured Projects
 Social Media/Contact
+
+## Preview
+
+![mobile preview](https://github.com/laicommadarren/Portfolio/Lai_Darren_Porfolio_images/mobile_preview.jpg?raw=true)
 
 ## Contact
 

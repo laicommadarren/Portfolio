@@ -42,6 +42,7 @@
     border-left: solid black;
     border-right: solid black;
     border-bottom: solid black;
+    border-radius: 5px;
   }
 
   .navScreen > a:hover {
@@ -66,11 +67,12 @@
 
   #aboutMe, #education, #techSkills, #projects {
     padding: 20px;
+    width: 45%;
   }
 
   #aboutMe {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   
   /* social media section large screen */
@@ -144,6 +146,7 @@
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    border-radius: 10px;
   }
 
   .navMobileRow > a:hover {
@@ -174,6 +177,7 @@
   
   #aboutMe, #education, #techSkills, #projects {
     padding: 10px;
+    width: 58%;
   }
   #aboutMe {
     padding-left: 5%;
@@ -229,7 +233,6 @@
 #aboutMe, #education, #techSkills, #projects {
   margin: auto;
   margin-top: 20px;
-  width: 58%;
   text-align: center;
   border: none;
   background-color: #FCD68B;
