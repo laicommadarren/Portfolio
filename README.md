@@ -1,4 +1,4 @@
-# Porfolio Project (Darren Lai)
+# Portfolio Project (Darren Lai)
 
 This is my Porfolio project for Coding Dojo Web Fundamentals Stack. I implemented methods that I learned during the course to create a portfolio to display my coding accomplishments. 
 
