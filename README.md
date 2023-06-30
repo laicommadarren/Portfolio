@@ -34,7 +34,7 @@ Social Media/Contact
 
 ## Preview
 
-![mobile preview](https://github.com/laicommadarren/Portfolio/Lai_Darren_Porfolio_images/mobile_preview.jpg?raw=true)
+View in [Github Pages](https://https://laicommadarren.github.io/Portfolio/) or directly on [Github](https://github.com/laicommadarren/Portfolio) 
 
 ## Contact
 
