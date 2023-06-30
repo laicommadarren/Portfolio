@@ -16,6 +16,14 @@ let isNavButtonClickInside = window.addEventListener("click", function(e) {
   }
 })
 
+let isNavButtonTouchInside = window.addEventListener("touch", function(e) {
+  if (!navMobile.contains(e.target) && !navButton.contains(e.target)) {
+  navMobile.style.visibility = "hidden";
+  navButton.style.visibility = "visible";
+  }
+})
+
+
 function closeNav() {
   navMobile.style.visibility = "hidden";
   navButton.style.visibility = "visible";
