@@ -24,12 +24,19 @@ Some things I learned were how to use setTimeout, addEventListener, and combinin
 This project allows visitors to get a better idea of me (Darren) through my personal portfolio page. Design and layout reflect my personality and style.
 
 Includes:
+
 Navigation
+
 Name/Profile
+
 About Me
+
 Educational Background
+
 Technology and Skills learned
+
 Featured Projects
+
 Social Media/Contact
 
 ## Preview
