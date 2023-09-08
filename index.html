@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Darren Lai</title>
-    <!-- load Bootstrap -->
-    <!-- I didn't actually use Bootstrap but I liked the font so I kept this here-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Darren Lai</title>
+  <!-- load Bootstrap -->
+  <!-- I didn't actually use Bootstrap but I liked the font so I kept this here-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <!-- images on left and right side -->
   <div class="leftColumn">
@@ -39,9 +42,9 @@
     <img src="Lai_Darren_Portfolio_images/choonsik_giftwrap.gif" alt="Choonsik giftwrapped">
   </div>
 
-<!-- desktop/large screen navigation bar -->
+  <!-- desktop/large screen navigation bar -->
   <nav class="navScreen">
-    <a href="#myName">About Me</a>
+    <a href="#aboutMe">About Me</a>
     <h4>|</h4>
     <a href="#education">Education</a>
     <h4>|</h4>
@@ -51,11 +54,11 @@
     <h4>|</h4>
     <a href="#socialMedia">Social Media/Contact</a>
   </nav>
-<!-- small screen navigation -->
-<button onclick=openNav() class="navButton">
-  <img src="Lai_Darren_Portfolio_images/hamburgermenu_icon.png" alt="hamburger menu icon">
-</button>
-  <nav onclick = closeNav() class=navMobile>
+  <!-- small screen navigation -->
+  <button onclick=openNav() class="navButton">
+    <img src="Lai_Darren_Portfolio_images/hamburgermenu_icon.png" alt="hamburger menu icon">
+  </button>
+  <nav onclick=closeNav() class=navMobile>
     <div class="navMobileRow">
       <a onclick=closeNav() href="#myName">About Me</a>
       <h4>|</h4>
@@ -69,40 +72,11 @@
       <a onclick=closeNav() href="#socialMedia">Social Media/Contact</a>
     </div>
   </nav>
-<!-- Name and Profile Picture -->
+  <!-- Name and Profile Picture -->
   <h1 id="myName">Darren Lai</h1>
   <img class="profilePic" src="Lai_Darren_Portfolio_images/profilepic_main.jpg" alt="Darren profile pic">
-<!-- About Me section --> 
-  <div id="aboutMe">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm Darren. I love to analyze things. Some of my interests include: exploring regional foods, classical music, K-pop girl groups, life philosophy, Sally and Choonsik (the characters to the left and right of the page). I often think about how to optimize and improve things, how not to limit myself, how to improve on my skills/talents and how to shore up my weaknesses. Life is always moving on, so we should too and improve with age.
-    </p>
-    <img class="pi" onclick=showFunFact() src="Lai_Darren_Portfolio_images/transparent_blinkingpi.gif" alt="pi">
-    <p class="clickMe">
-      Click me!
-    </p>
-    <p class="funFact">
-      <span>Fun fact:</span> I can recite <strong>340</strong> digits of pi!
-      <br>
-      I also love pie. My favorite pies are pecan and french apple.
-    </p>
-    <h2>Why I decided to pursue Software Engineering</h2>
-    <p>
-      Growing up, I was always skilled at deductive reasoning. With that said, I excelled in mathematics, and I eventually pursued a Mathematics degree in college. However, when my graduation drew nearer and nearer, I looked at the path I was pursuing: higher academia, which included getting a doctorate degree. I struggled to find a topic that particularly interested me which I could focus on for such studies. At the time, I could have pursued computer science because it is a clear extension of logic, but I had the perception that it was extremely repetitive. I preferred more theoretical and mental challenges at the time.
-    </p>
-    <p>
-      On another note, I felt I had personal issues that I wanted to overcome, namely improving my social skills. It was a struggle for me to ask for letters of recommendation to apply to summer research programs. I wasn't able to engage in conversation and ask questions, especially with strangers. That led me to pursue a path in self-employment and sales that eventually helped me to improve my competency in social skills.
-    </p>
-    <p>
-      Flash forward to now. I have heard over the years about friends or acquaintances that enrolled in a programming bootcamp and ended up working as a programmer in some way. It helped that the income was attractive, especially compared to what I was making being self-employed and having the challenge of managing just about all the aspects of self-employment. I have tended to take more difficult paths to challenge myself, mostly in areas where my skills were less useful. Now I feel it is the right time to work with my strength in logical reasoning to be able to create a sustaining career, as well as incorporate the skills I've picked up while being self-employed. I learn better when I have some kind of guidance, and Coding Dojo's platform seemed to be quite professional, so I decided to take a chance to enroll in their software development course. 
-    </p>
-    <h2>What makes me the right candidate?</h2>
-    <p>
-      I can see things from multiple perspectives, as I am very analytical and constantly thinking about the many dimensions of an issue. I see things both on a big picture level as well as the micro-details. Generally, I am pragmatic, so I will find an appropriate solution given the conditions, but at the same time have ideas for improvement for potential future development.
-    </p>
-  </div>
-<!-- Education section -->
+
+  <!-- Education section -->
   <div id="education">
     <h2>Education</h2>
     <p>
@@ -124,42 +98,119 @@
   <!-- technology/skills -->
   <div id="techSkills">
     <h2>Technology/Skills</h2>
-    <p><b>Javascript, HTML/CSS, R</b></p>
+    <p>
+      <b>Python</b><br />
+      Flask
+    </p>
+    <p>
+      <b>JavaScript</b><br />
+      Node.js, Express.js, React.js
+    </p>
+    <p>
+      <b>Java</b><br />
+      Spring
+    </p>
+    <p><b>HTML/CSS</b></p>
+    <p>
+      <b>Databases</b><br />
+      MongoDB, SQL
+    </p>
+    <p>
+
+    </p>
   </div>
   <!-- projects -->
   <div id="projects">
     <h2>Projects</h2>
-    <div class="projectbox">
-      <img src="Lai_Darren_Portfolio_images/blacksesamepannacotta.jpg" alt="black sesame panna cotta">
+    <div class="projectbox" style="width:100%; border-radius:12px">
+      <h4>Sally Eats the World!</h4>
+      <p>An educational app that showcases dishes around Los Angeles</p>
+      <div style="width:100%; height:350px">
+        <iframe style="max-width:400px" width="100%" height="100%" src="https://www.youtube.com/embed/Iy9ZQWMGWno">
+        </iframe>
+      </div>
     </div>
-    <div class="projectbox"></div>
+    <div class="projectbox" style="width:100%; border-radius:12px">
+      <h4>Restaurant Recommendation App</h4>
+      <p>A mobile app that speeds up the process of choosing a restaurant from Yelp</p>
+      <div style="width:100%; height:350px">
+        <iframe style="max-width:400px" width="100%" height="100%" src="https://www.youtube.com/embed/OQdE51V5H1c">
+        </iframe>
+      </div>
+    </div>
   </div>
-
+  <!-- About Me section -->
+  <div id="aboutMe">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Darren. I love to analyze things. Some of my interests include: exploring regional foods, classical music,
+      K-pop girl groups, life philosophy, Sally and Choonsik (the characters to the left and right of the page). I often
+      think about how to optimize and improve things, how not to limit myself, how to improve on my skills/talents and
+      how to shore up my weaknesses. Life is always moving on, so we should too and improve with age.
+    </p>
+    <img class="pi" onclick=showFunFact() src="Lai_Darren_Portfolio_images/transparent_blinkingpi.gif" alt="pi">
+    <p class="clickMe">
+      Click me!
+    </p>
+    <p class="funFact">
+      <span>Fun fact:</span> I can recite <strong>340</strong> digits of pi!
+      <br>
+      I also love pie. My favorite pies are pecan and french apple.
+    </p>
+    <h2>Why I decided to pursue Software Engineering</h2>
+    <p>
+      Growing up, I was always skilled at deductive reasoning. With that said, I excelled in mathematics, and I
+      eventually pursued a Mathematics degree in college. Computer Science was an option, but I decided to go in on what
+      I felt was the most natural to me: theoretical mathematics.
+    </p>
+    <p>
+      As I was going through college, I had issues developing relationships with my professors and colleagues which
+      seemed to be important to grow in my career. It was a struggle for me to ask for letters of recommendation to
+      apply to summer research programs and for scholarships. After deep introspection, this led me to pursue a path in
+      self-employment and sales that eventually helped me to improve my competency in communication and relationship
+      building.
+    </p>
+    <p>
+      Flash forward to now. I had seen friends enrolling in coding bootcamps and the income and lifestyle changes they
+      had. It looked appealing because of the natural talent I had for the related skills, and it seemed like much less
+      effort to make money compared to what I was doing in an area I was weaker at. I feel it is the right time to work
+      with my strengths in logic, analysis, and problem solving to pursue a career I can grow further in, as well as
+      incorporate the skills I've picked up while being self-employed. I decided to enroll in Coding Dojo's full time
+      web development course to expedite my transition.
+    </p>
+    <h2>What makes me the right candidate?</h2>
+    <p>
+      I can see things from multiple perspectives, as I am very analytical and constantly thinking about the many
+      dimensions of an issue. I see things both on a big picture level as well as the micro-details. Generally, I am
+      pragmatic, so I will find an appropriate solution given the conditions, but at the same time I like to be
+      comprehensive in my learning so that I can understand all the details as well as identify areas for improvement.
+    </p>
+  </div>
   <!-- social media/ contact section -->
   <h3 class="socMed">Social Media / Contact</h3>
   <div id="socialMedia">
     <div onclick=email() class="socMedBox">
-        <img src="Lai_Darren_Portfolio_images/email_icon.png" alt="email icon">
+      <img src="Lai_Darren_Portfolio_images/email_icon.png" alt="email icon">
       <p>email</p>
     </div>
     <div onclick=linkedin() class="socMedBox">
-      <img  src="Lai_Darren_Portfolio_images/linkedin_icon.png" alt="LinkedIn icon">
+      <img src="Lai_Darren_Portfolio_images/linkedin_icon.png" alt="LinkedIn icon">
       <p>LinkedIn</p>
     </div>
     <div onclick=github() class="socMedBox">
-      <img  src="Lai_Darren_Portfolio_images/github_icon.png" alt="GitHub icon">
+      <img src="Lai_Darren_Portfolio_images/github_icon.png" alt="GitHub icon">
       <p>GitHub</p>
     </div>
     <div onclick=instagram() class="socMedBox">
-      <img  src="Lai_Darren_Portfolio_images/instagram_icon.webp" alt="Instagram icon">
+      <img src="Lai_Darren_Portfolio_images/instagram_icon.webp" alt="Instagram icon">
       <p>Instagram</p>
     </div>
     <div onclick=youtube() class="socMedBox">
-      <img  src="Lai_Darren_Portfolio_images/youtube_icon.png" alt="YouTube icon">
+      <img src="Lai_Darren_Portfolio_images/youtube_icon.png" alt="YouTube icon">
       <p>YouTube</p>
     </div>
     <div onclick=yelp() class="socMedBox">
-      <img  src="Lai_Darren_Portfolio_images/yelp_icon.jpg" alt="Yelp icon">
+      <img src="Lai_Darren_Portfolio_images/yelp_icon.jpg" alt="Yelp icon">
       <p>Yelp</p>
     </div>
   </div>
@@ -169,4 +220,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

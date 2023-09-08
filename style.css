@@ -4,25 +4,54 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 /* images on sides */
-.leftColumn {
-  position: fixed;
-  width: 20%;
+@media (max-width: 510px) {
+  .leftColumn {
+    visibility: hidden;
+    position: fixed;
+    width: 20%;
+  }
+
+  .rightColumn {
+    visibility: hidden;
+    position: fixed;
+    right: 0;
+    width: 20%;
+  }
+
+  .leftColumn>img,
+  .rightColumn>img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.rightColumn {
-  position: fixed;
-  right: 0;
-  width: 20%;
+@media (min-width:511px) {
+  .leftColumn {
+    position: fixed;
+    width: 20%;
+    max-width:200px;
+  }
+
+  .rightColumn {
+    position: fixed;
+    right: 0;
+    width: 20%;
+    max-width:200px;
+  }
+
+  .leftColumn>img,
+  .rightColumn>img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.leftColumn > img, .rightColumn > img {
-  width: 100%;
-  height: auto;
-}
 
 /* for computer/larger screens */
 @media (min-width: 841px) {
+
   /* navigation */
   .navButton {
     display: none;
@@ -45,7 +74,7 @@
     border-radius: 5px;
   }
 
-  .navScreen > a:hover {
+  .navScreen>a:hover {
     text-decoration: underline;
     font-weight: bold;
   }
@@ -58,14 +87,17 @@
   .navMobile {
     display: none;
   }
-  
+
   /* profile section large screen */
   #myName {
     text-align: center;
     padding-top: 75px;
   }
 
-  #aboutMe, #education, #techSkills, #projects {
+  #aboutMe,
+  #education,
+  #techSkills,
+  #projects {
     padding: 20px;
     width: 45%;
   }
@@ -74,7 +106,7 @@
     padding-left: 5%;
     padding-right: 5%;
   }
-  
+
   /* social media section large screen */
   #socialMedia {
     display: flex;
@@ -85,33 +117,35 @@
     padding: 10px;
     margin-bottom: 100px;
   }
-  
+
   .socMedBox {
     display: block;
     text-align: center;
     margin: auto;
     padding: 10px;
   }
-  
-  .socMedBox > img {
+
+  .socMedBox>img {
     width: 5vw;
     height: 5vw;
     margin: 10px;
     border-radius: 20%;
   }
-  
-  .socMedBox > a > img {
+
+  .socMedBox>a>img {
     width: 5vw;
     height: 5vw;
   }
-  
-  .socMedBox > p {
+
+  .socMedBox>p {
     text-align: center;
     font-weight: bold;
   }
 }
-/* for smaller screens */ 
+
+/* for smaller screens */
 @media (max-width:840px) {
+
   /* navigation */
   .navButton {
     position: fixed;
@@ -121,11 +155,11 @@
     border-color: #FCD68B;
   }
 
-  .navButton > img {
+  .navButton>img {
     height: 75px;
   }
-  
-  .navButton > p {
+
+  .navButton>p {
     font-size: 12px;
   }
 
@@ -149,7 +183,7 @@
     border-radius: 10px;
   }
 
-  .navMobileRow > a:hover {
+  .navMobileRow>a:hover {
     font-weight: bold;
     text-decoration: underline;
   }
@@ -166,19 +200,25 @@
     align-items: center;
     border-bottom: solid black;
   }
+
   a {
     color: black;
   }
+
   /* profile section small screen */
   #myName {
     text-align: center;
     padding-top: 85px;
   }
-  
-  #aboutMe, #education, #techSkills, #projects {
+
+  #aboutMe,
+  #education,
+  #techSkills,
+  #projects {
     padding: 10px;
     width: 58%;
   }
+
   #aboutMe {
     padding-left: 5%;
     padding-right: 5%;
@@ -188,7 +228,7 @@
   .socMed {
     margin-bottom: 10px;
   }
-  
+
   #socialMedia {
     width: 130px;
     margin: 0px auto;
@@ -196,28 +236,43 @@
     padding: 10px;
     margin-bottom: 20px;
   }
-  
+
   .socMedBox {
     display: flex;
     justify-content: flex-start;
   }
-  
-  .socMedBox > img {
+
+  .socMedBox>img {
     width: 5vw;
     height: 5vw;
     border-radius: 20%;
   }
-  
-  .socMedBox > a > img {
+
+  .socMedBox>a>img {
     width: 5vw;
     height: 5vw;
   }
-  
-  .socMedBox > p {
+
+  .socMedBox>p {
     padding-left: 20px;
     font-weight: bold;
   }
 }
+
+@media (max-width:511px) {
+  .navButton {
+    left: 0%;
+  }
+
+  #aboutMe,
+  #education,
+  #techSkills,
+  #projects {
+    padding: 10px;
+    width: 95%;
+  }
+}
+
 /* end of screen adjustment css */
 
 /* about me section */
@@ -225,12 +280,16 @@
 .profilePic {
   display: flex;
   max-width: 25%;
+  min-width:150px;
   margin: auto;
   margin-top: 20px;
   border-radius: 10%;
 }
 
-#aboutMe, #education, #techSkills, #projects {
+#aboutMe,
+#education,
+#techSkills,
+#projects {
   margin: auto;
   margin-top: 20px;
   text-align: center;
@@ -257,7 +316,7 @@ h2 {
   visibility: hidden;
 }
 
-.funFact > span {
+.funFact>span {
   color: red;
 }
 
@@ -266,9 +325,10 @@ h2 {
   border: solid black;
   padding: 10px;
   margin-top: 20px;
+  background-color: #FDC147;
 }
 
-.projectbox > img {
+.projectbox>img {
   width: 60%;
 }
 
@@ -280,7 +340,8 @@ h2 {
   margin-top: 40px;
 }
 
-.socMedBox > img:hover, .socMedBox > a > img:hover {
+.socMedBox>img:hover,
+.socMedBox>a>img:hover {
   transform: scale(1.2);
 }
 
