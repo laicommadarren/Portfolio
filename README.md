@@ -1,12 +1,10 @@
 # Portfolio Project (Darren Lai)
 
-This is my Porfolio project for Coding Dojo Web Fundamentals Stack. I implemented methods that I learned during the course to create a portfolio to display my coding accomplishments. 
-
 ## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
-- [Preview](#preview)
+- [View](#View)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -39,7 +37,7 @@ Featured Projects
 
 Social Media/Contact
 
-## Preview
+## View
 
 View in [Github Pages](https://laicommadarren.github.io/Portfolio/) or directly on [Github](https://github.com/laicommadarren/Portfolio) 
 
